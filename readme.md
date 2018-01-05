@@ -72,7 +72,10 @@ mongo.connect(url, function(err, db){
 > **Note:** It is probably a good idea to test each of these in the `mongo` shell before adding the prompt to `app.js`.
 
 ### Protip: Don't run nodemon when using prompt-sync.
-It won't work ¯\ _(ツ)_/¯
+
+If you use `nodemon` you will see an error like `process.stdin.setRawMode is not a function`, and your app won't work.
+
+¯\ _(ツ)_/¯
 
 ## Task 1:
 
